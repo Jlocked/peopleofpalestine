@@ -34,6 +34,9 @@
 </head>
 
 <body class="body">
+    <div class="overlay" id="overlay" onclick="removeOverlay()">
+        click anywhere to continue
+    </div>
     <audio id="miAudio" src="My Blood is Palestinian Dami Falasteeni.mp3"> 
       </audio>
       <script src="script.js"></script>
@@ -208,6 +211,11 @@
             }
         
             setInterval(updateLocalTime, 1000);
+        </script>
+        <script>
+            function removeOverlay(){
+                document.getElementById('overlay').style.display = 'none';
+            }
         </script>
         
     </body>
